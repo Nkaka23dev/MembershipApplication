@@ -5,13 +5,14 @@ import {
   Image,
   StyleSheet,
   KeyboardAvoidingView,
-  TextInput,
   Pressable,
 } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
+import Input from "../components/Input";
+import Button from "../components/Button";
 
-export default function Login() {
+export default function Login({ navigation }: any) {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       {/* I wnat it centered */}
@@ -30,43 +31,17 @@ export default function Login() {
           >
             Login to your account
           </Text>
-          <View style={{ marginTop: 70 }}>
-            <View style={styles.input}>
-              <Entypo
-                style={{ marginLeft: 16 }}
-                name="mail"
-                size={24}
-                color="gray"
-              />
-              <TextInput
-                style={{
-                  width: 260,
-                  marginVertical: 10,
-                  marginLeft: 10,
-                  color: "black",
-                  borderRadius: 80,
-                }}
-                placeholder="Enter your email.."
-              />
-            </View>
-            <View style={[styles.input, { marginTop: 30 }]}>
-              <Feather
-                name="lock"
-                size={24}
-                color="gray"
-                style={{ marginLeft: 16 }}
-              />
-              <TextInput
-                style={{
-                  width: 260,
-                  marginVertical: 10,
-                  marginLeft: 10,
-                  color: "black",
-                }}
-                placeholder="Enter your password.."
-                secureTextEntry={true}
-              />
-            </View>
+          <View>
+            <Input
+              Icon={Entypo}
+              iconName="mail"
+              placeholder="Enter your email address"
+            />
+            <Input
+              Icon={Feather}
+              iconName="lock"
+              placeholder="Enter your password"
+            />
           </View>
           <View
             style={{
@@ -82,29 +57,17 @@ export default function Login() {
               Forgot password
             </Text>
           </View>
-          <View style={{ marginTop: 50 }}>
-            <Pressable
-              style={{
-                backgroundColor: "#FEBE10",
-                width: 200,
-                marginLeft: "auto",
-                marginRight: "auto",
-                padding: 15,
-                borderRadius: 5,
-              }}
-            >
-              <Text
-                style={{
-                  fontWeight: "500",
-                  color: "white",
-                  textAlign: "center",
-                  fontSize: 18,
-                }}
-              >
-                Login
-              </Text>
-            </Pressable>
-          </View>
+
+          <Button navigated={() => navigation.navigate("main")} title="Login" />
+
+          <Pressable
+            style={{ marginTop: 20 }}
+            onPress={() => navigation.navigate("register")}
+          >
+            <Text style={{ textAlign: "center", fontWeight: "500" }}>
+              Don't have an account? Register
+            </Text>
+          </Pressable>
         </KeyboardAvoidingView>
       </View>
     </SafeAreaView>
@@ -115,11 +78,5 @@ const styles = StyleSheet.create({
   img: {
     width: 150,
     height: 100,
-  },
-  input: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: 5,
-    backgroundColor: "#D0D0D0",
   },
 });
