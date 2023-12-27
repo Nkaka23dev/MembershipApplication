@@ -32,16 +32,25 @@ export default function Register({ navigation }: any) {
         </Text>
         <View>
           <Input
+            mt={22}
+            pv={5}
+            bgColor="#D0D0D0"
             Icon={AntDesign}
             iconName="user"
             placeholder="Enter you name"
           />
           <Input
+            mt={22}
+            pv={5}
+            bgColor="#D0D0D0"
             Icon={Entypo}
             iconName="mail"
             placeholder="Enter your email address"
           />
           <Input
+            mt={22}
+            pv={5}
+            bgColor="#D0D0D0"
             Icon={Feather}
             iconName="lock"
             placeholder="Enter your password"
