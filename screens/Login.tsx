@@ -33,11 +33,17 @@ export default function Login({ navigation }: any) {
           </Text>
           <View>
             <Input
+              bgColor="#D0D0D0"
+              pv={5}
+              mt={22}
               Icon={Entypo}
               iconName="mail"
               placeholder="Enter your email address"
             />
             <Input
+              bgColor="#D0D0D0"
+              pv={5}
+              mt={22}
               Icon={Feather}
               iconName="lock"
               placeholder="Enter your password"

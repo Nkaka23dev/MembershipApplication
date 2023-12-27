@@ -5,11 +5,26 @@ interface InputProps {
   Icon: any;
   iconName: string;
   placeholder: string;
+  bgColor: string;
+  mt?: number;
+  pv?: number;
 }
 
-export default function Input({ Icon, iconName, placeholder }: InputProps) {
+export default function Input({
+  Icon,
+  iconName,
+  placeholder,
+  bgColor,
+  mt,
+  pv,
+}: InputProps) {
+  const inputStyles = {
+    backgroundColor: bgColor,
+    marginTop: mt,
+    paddingVertical: pv,
+  };
   return (
-    <View style={[styles.input, { marginTop: 22 }]}>
+    <View style={[styles.input, inputStyles]}>
       <Icon style={{ marginLeft: 16 }} name={iconName} size={24} color="gray" />
       <TextInput
         style={{
@@ -32,7 +47,5 @@ const styles = StyleSheet.create({
   input: {
     flexDirection: "row",
     alignItems: "center",
-    paddingVertical: 5,
-    backgroundColor: "#D0D0D0",
   },
 });
