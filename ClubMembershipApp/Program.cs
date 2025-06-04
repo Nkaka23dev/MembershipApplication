@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// static void GetFullName(out string fullName)
+// {
+//     fullName = "John Doe";
+// }
+
+
+// GetFullName(out string name);
+// Console.WriteLine(name);
+
+
