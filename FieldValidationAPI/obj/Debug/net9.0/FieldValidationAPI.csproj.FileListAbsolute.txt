@@ -1,0 +1,12 @@
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/bin/Debug/net9.0/FieldValidationAPI.deps.json
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/bin/Debug/net9.0/FieldValidationAPI.dll
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/bin/Debug/net9.0/FieldValidationAPI.pdb
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.AssemblyInfoInputs.cache
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.AssemblyInfo.cs
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.csproj.CoreCompileInputs.cache
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.sourcelink.json
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.dll
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/refint/FieldValidationAPI.dll
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/FieldValidationAPI.pdb
+/Users/thegym/terrassign/MembershipApplication/FieldValidationAPI/obj/Debug/net9.0/ref/FieldValidationAPI.dll

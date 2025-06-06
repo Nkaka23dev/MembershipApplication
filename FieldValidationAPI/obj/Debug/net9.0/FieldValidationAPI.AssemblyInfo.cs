@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FieldValidationAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4830dc474ce2ee8d2c9a76f3a989537faf094077")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ed1fd0bcc50892c00edc2d344555a2a239f29fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FieldValidationAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FieldValidationAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

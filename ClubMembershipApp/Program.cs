@@ -1,10 +1,12 @@
-﻿// static void GetFullName(out string fullName)
-// {
-//     fullName = "John Doe";
-// }
+﻿using ClubMembershipApp;
+using ClubMembershipApp.Views;
 
-
-// GetFullName(out string name);
-// Console.WriteLine(name);
-
-
+class Program
+{
+    static void Main(string[] args)
+    {
+        IView mainView = Factory.GetMainViewObject();
+        mainView.RunView();
+        Console.ReadKey();
+    }
+}

@@ -6,7 +6,7 @@ namespace FieldValidationAPI
     public delegate bool RequiredValidDel(string fieldVal);
     public delegate bool StringLengthValidDel(string fieldVal, int min, int max);
     public delegate bool DateValidDel(string dateTime, out DateTime validDateTime);
-    public delegate bool PatternMatchDel(string fieldVal, string pattern);
+    public delegate bool PatternMatchValidDel(string fieldVal, string pattern);
     public delegate bool CompareFieldsValidDel(string fieldVal, string fieldValCompare);
 
     public class CommonFieldValidatorFunctions
@@ -14,7 +14,7 @@ namespace FieldValidationAPI
         private static RequiredValidDel? _requiredValidatorDel = null;
         private static StringLengthValidDel? _stringValidatorDel = null;
         private static DateValidDel? _dateValidatorDel = null;
-        private static PatternMatchDel? _patternMatchDel = null;
+        private static PatternMatchValidDel? _patternMatchValidDel = null;
         private static CompareFieldsValidDel? _compareFieldsValidDel = null;
 
         /// <summary>
@@ -45,14 +45,26 @@ namespace FieldValidationAPI
                 return _dateValidatorDel;
             }
         }
-        public static PatternMatchDel PatternFieldMatchDel
+        public static PatternMatchValidDel PatternFieldMatchDel
         {
             get
             {
-                _patternMatchDel ??= new PatternMatchDel(FieldPatternValid);
-                return _patternMatchDel;
+                _patternMatchValidDel ??= new PatternMatchValidDel(FieldPatternValid);
+                return _patternMatchValidDel;
             }
         }
+        /// <summary>
+        /// Easy to understan
+        /// </summary>
+        // public static CompareFieldsValidDel CompareFieldsValidDel
+        // {
+        //     get
+        //     {
+        //         _compareFieldsValidDel ??= FieldComparisonValid;
+        //         return _compareFieldsValidDel;
+        //     }
+        // }
+
         public static CompareFieldsValidDel CompareFieldsValidDel
         {
             get
