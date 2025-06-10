@@ -38,7 +38,7 @@ public static class CommonOutputText
     }
     public static void WriteLoginHeading()
     {
-        Console.WriteLine(MainHeading);
+        Console.WriteLine(LoginHeading);
         Console.WriteLine();
         Console.WriteLine();
 
@@ -46,7 +46,7 @@ public static class CommonOutputText
      
     public static void WriteRegistrationHeading()
     {
-        Console.WriteLine(MainHeading);
+        Console.WriteLine(RegistrationHeading);
         Console.WriteLine();
         Console.WriteLine();
 

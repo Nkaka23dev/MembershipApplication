@@ -15,7 +15,7 @@ public static class Factory
         userRegistrationValidator.InitialiseValidatorDelegates();
 
         IView registerView = new UserRegistrationView(register, userRegistrationValidator);
-        IView loginView = new UserLogin(login);
+        IView loginView = new UserLoginView(login);
         IView mainView = new MainView(registerView, loginView);
         return mainView;
     }

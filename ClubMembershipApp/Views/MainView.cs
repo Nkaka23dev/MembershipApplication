@@ -2,12 +2,16 @@ using ClubMembershipApp.FieldValidators;
 
 namespace ClubMembershipApp.Views;
 
-public class MainView(IView loginView, IView registerView) : IView
+public class MainView: IView
 {
-    IView _registerView = registerView;
-    IView _loginView = loginView;
     public IFieldValidator FieldValidator => null;
-
+    IView _registerView = null;
+    IView _loginView = null;
+    public MainView(IView registerView, IView loginView)
+    {
+        _registerView = registerView;
+        _loginView = loginView;
+    }
     public void RunView()
     {
         CommonOutputText.WriteMainHeading();
@@ -20,20 +24,24 @@ public class MainView(IView loginView, IView registerView) : IView
         }
         else if (key == ConsoleKey.L)
         {
-            RunUserLoginView();
+           RunUserLoginView();
         }
         else
         {
-            // Console.Clear();
+
+            Console.Clear();
+            Console.WriteLine("I am doing nothing..");
             Console.WriteLine("Good bye!!!");
         }
 
     }
-    private void RunUserRegistrationView() {
+    private void RunUserRegistrationView()
+    {
+         Console.WriteLine("REGISTERING USER....................ION");
         _registerView.RunView();
-    }  
-    private void RunUserLoginView() {
+    }
+    private void RunUserLoginView()
+    {
         _loginView.RunView();
-    }  
+    }
 }
-  

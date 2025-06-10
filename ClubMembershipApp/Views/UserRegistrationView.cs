@@ -24,6 +24,8 @@ public class UserRegistrationView(IRegister register, IFieldValidator fieldValid
         _fieldValidator.FieldArray[(int)FieldConstants.UserRegistrationFields.AddressSecondLine] = GetInputFromTheUser(FieldConstants.UserRegistrationFields.AddressSecondLine, "Please your address second line: ");
         _fieldValidator.FieldArray[(int)FieldConstants.UserRegistrationFields.addressCity] = GetInputFromTheUser(FieldConstants.UserRegistrationFields.addressCity, "Please enter your city address: ");
         _fieldValidator.FieldArray[(int)FieldConstants.UserRegistrationFields.PostCode] = GetInputFromTheUser(FieldConstants.UserRegistrationFields.PostCode, "Please Enter you post code: ");
+        
+        RegisterUser();
     }
     private void RegisterUser()
     {
